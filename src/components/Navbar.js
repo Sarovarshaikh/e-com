@@ -6,7 +6,7 @@ import { CartContext } from "../context/CartContext";
 const Navbar = () => {
   const { user, logoutUser } = useContext(AuthContext);
   const { cart } = useContext(CartContext);
-
+  console.log("==================>", user, "<============");
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-4">
       <Link className="navbar-brand" to="/">
@@ -17,7 +17,17 @@ const Navbar = () => {
           {user ? (
             <>
               <li className="nav-item">
-                <span className="nav-link">Hello, {user.profile.name}</span>
+                <span className="nav-link">
+                  Hello, {user?.profile?.data?.name}
+                </span>
+              </li>
+              <li>
+                <img
+                  src={user?.profile?.data?.avatar}
+                  className=""
+                  style={{ width: "91px", height: "87px" }}
+                  alt="img..."
+                />
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/cart">
