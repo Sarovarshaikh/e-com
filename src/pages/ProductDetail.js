@@ -37,6 +37,21 @@ const ProductDetail = () => {
           </button>
         </div>
       </div>
+      <div className="row">
+        <div className="mt-4 mx-auto">
+          <h5>Customer Reviews</h5>
+          <div className="border rounded p-3 mb-2">
+            <strong>Jane Doe</strong>
+            <p className="mb-1">⭐⭐⭐⭐⭐</p>
+            <p>Excellent quality, would buy again!</p>
+          </div>
+          <div className="border rounded p-3">
+            <strong>John Smith</strong>
+            <p className="mb-1">⭐⭐⭐☆☆</p>
+            <p>Good product, but shipping was slow.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -84,3 +84,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - userName and password take from user API any one from postmanl collection fake API
 
 4. Bootstarp 5 use
+
+5. Add global search state
+
+- search base on product title as sleek white
+
+6. Add sorting / filter
+
+- base low to high price - asc
+- base high to low price - desc

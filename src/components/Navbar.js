@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { CartContext } from "../context/CartContext";
+import { SearchContext } from "../context/SearchContext";
 
 const Navbar = () => {
   const { user, logoutUser } = useContext(AuthContext);
+  const { query, setQuery } = useContext(SearchContext);
   const { cart } = useContext(CartContext);
   console.log("==================>", user, "<============");
   return (
@@ -12,6 +14,15 @@ const Navbar = () => {
       <Link className="navbar-brand" to="/">
         MyShop
       </Link>
+      <form className="d-flex ms-auto me-2">
+        <input
+          className="form-control"
+          type="search"
+          placeholder="Search products"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </form>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ms-auto">
           {user ? (
