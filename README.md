@@ -93,3 +93,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - base low to high price - asc
 - base high to low price - desc
+
+---
+
+Submission Guidelines:
+
+1]. Provide the URL to the deployed site :- https://bharat-go-e-com.netlify.app/
+
+- open link
+- By default home page
+- Click login use credintail userName(email) and password e.g "email": "maria@mail.com",
+  "password": "12345",
+  also use different from Get users end point from postman collection
+
+- Perfomance searching base title of product
+- Sorting base on price asec or desc
+- add cart
+- Product details page
+- static reviews
+
+2]. Share the link to the GitHub repository containing your project code.
+GitHub repository => https://github.com/Sarovarshaikh/e-com.git
+
+1.  Clone
+
+- git clone https://github.com/Sarovarshaikh/e-com.git
+
+2. Switch branch from main to develop
+
+- git checkout develop
+
+3. install dependency
+
+- npm i
+
+4. Run project on localy
+
+- npm start
+
+5. See website
+
+Note:-
+Also submission guidelines in Email at bottom ,please scroll down
