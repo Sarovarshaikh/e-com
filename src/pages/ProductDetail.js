@@ -1,4 +1,3 @@
-// src/pages/ProductDetail.js
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../services/api";
@@ -41,12 +40,12 @@ const ProductDetail = () => {
         <div className="mt-4 mx-auto">
           <h5>Customer Reviews</h5>
           <div className="border rounded p-3 mb-2">
-            <strong>Jane Doe</strong>
+            <strong>Sarovar shaikh</strong>
             <p className="mb-1">⭐⭐⭐⭐⭐</p>
             <p>Excellent quality, would buy again!</p>
           </div>
           <div className="border rounded p-3">
-            <strong>John Smith</strong>
+            <strong>Yunus Shaikh</strong>
             <p className="mb-1">⭐⭐⭐☆☆</p>
             <p>Good product, but shipping was slow.</p>
           </div>
